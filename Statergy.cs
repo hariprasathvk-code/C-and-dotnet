@@ -12,7 +12,7 @@ namespace StrategyPatternD
     {
         public void Pay(double amount)
         {
-            Console.WriteLine($"Paid ₹{amount} using Credit Card.");
+            Console.WriteLine($"Paid {amount} using Credit Card.");
         }
     }
 
@@ -20,7 +20,7 @@ namespace StrategyPatternD
     {
         public void Pay(double amount)
         {
-            Console.WriteLine($"Paid ₹{amount} using PayPal.");
+            Console.WriteLine($"Paid {amount} using PayPal.");
         }
     }
 
@@ -28,7 +28,7 @@ namespace StrategyPatternD
     {
         public void Pay(double amount)
         {
-            Console.WriteLine($"Paid ₹{amount} using UPI.");
+            Console.WriteLine($"Paid {amount} using UPI.");
         }
     }
 
@@ -48,7 +48,7 @@ namespace StrategyPatternD
         {
             if (_paymentStrategy == null)
             {
-                Console.WriteLine("⚠️ No payment method selected!");
+                Console.WriteLine("No payment method selected!");
                 return;
             }
 
